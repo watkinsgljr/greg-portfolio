@@ -1,0 +1,455 @@
+body {
+overflow: scroll;
+}
+
+header {}
+
+
+
+.navigation {
+    background-color: black;
+    opacity: .6;
+    margin: auto;
+    display: flex;
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 8vh;
+    justify-content: space-around;
+}
+
+.navigation:first-child {
+    justify-content: flex-start;
+
+  }
+
+#navbar2 {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    position: relative;
+    
+    z-index: 1000;
+}
+
+.nav-items {
+    color: white;
+}
+
+/* .navbar-expand-lg {
+    display: flex;
+    max-width: 75%;
+    justify-content: space-around;
+
+} */
+
+.navlinkage {
+    display: inline-block;
+}
+
+.fade-block {
+background-color: black;
+height: 100vh;
+width: 100vw;
+position: fixed;
+}
+
+.fade-block-green {
+    background-color: #21A06B;
+    height: 30vh;
+    width: 100vw;
+    position: absolute;
+    opacity: .85;
+}
+
+.background-pic {
+    background: url("../images/port-background.jpg") no-repeat center;
+    background-size: cover;
+    opacity: .7;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+      
+}
+
+.contact-container2 {
+    background: url("../images/footer_bg.jpg") no-repeat center;
+    background-size: cover;
+    height: 30vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    top: 10rem;
+    /* border: red solid 1px; */
+      
+}
+
+.nav-container {
+    max-width: 95%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.container2 {
+    background-color: white;
+    width: 75%;
+    margin: 80px auto;
+    /* border: solid red 1px; */
+    /* z-index: 1000; */
+    height: 80%;
+    position: relative; 
+    border-top: 10px solid #21A06B;
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: space-around;
+    overflow: scroll;
+}
+
+.about-content-container{
+    width: 50rem;
+    position: relative;
+    height: 50rem;
+    
+    margin: auto;
+}
+
+.about-me-button-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    position: relative;
+    top: 250px;
+}
+
+.contact-container {
+    background-color: white;
+    width: 75%;
+    margin: 80px auto;
+    /* border: solid red 1px; */
+    /* z-index: 1000; */
+    height: 80%;
+    position: relative; 
+    border-top: 10px solid #21A06B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: scroll;
+    flex-flow: column;
+}
+
+.about-container {
+    background-color: white;
+    width: 75%;
+    margin: 80px auto;
+    /* border: solid red 1px; */
+    /* z-index: 1000; */
+    height: 80%;
+    position: relative; 
+    border-top: 10px solid #21A06B;
+    display: flex;
+    /* justify-content: space-between;
+    align-items: center; */
+    overflow: scroll;
+    flex-flow: column;
+}
+
+.port-container {
+    background-color: white;
+    width: 75%;
+    margin: 80px auto;
+    /* border: solid red 1px; */
+    /* z-index: 1000; */
+    height: 80%;
+    position: relative; 
+    border-top: 10px solid #21A06B;
+    display: grid;
+    /* justify-items: space-around;
+    align-items: center; */
+    flex-flow: column;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+.index-grid-container {
+    background-color: white;
+    width: 75%;
+    margin: auto;
+    margin-top: 80px;
+    /* border: solid red 1px; */
+    /* z-index: 1000; */
+    height: 80%;
+    position: relative; 
+    border-top: 10px solid #21A06B;
+    display: grid;
+    /* justify-items: space-around;
+    align-items: center; */
+    /* flex-flow: column; */
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+}
+
+.language-bar{
+    position: relative;
+    display: flex;
+    /* border: 1px red solid; */
+    height: 100px;
+    width: 55%;
+    border-radius: 15px;
+    box-shadow: 10px 10px 2px 1px rgba(0, 0, 0, .2);
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.language-buttons {
+    height: 65px;
+    width: 65px;
+}
+
+.greeting {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    Width: 35%;
+    /* border: red solid 1px; */
+    margin-left: 50px;
+    right: 350px;
+    color: grey;
+}
+
+button {
+    height: 50px;
+    width: 140px;
+    border: 3px solid #21A06B;
+    background-color: white;
+    border-radius: 15px;
+    color: #21A06B;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+#contact-button {
+    height: 2.7rem;
+    width: 8rem;
+    margin: auto;
+    border: 3px solid #21A06B;
+    background-color: white;
+    border-radius: 15px;
+    /* color: #21A06B; */
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: .5;  
+}
+
+.resume-button {
+    background-color: #21A06B;
+    opacity: 1;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    width: 200px;
+    
+}
+
+.nav-resume-button {
+   height: 85%;
+   float: left;
+   text-align: center;
+   padding-bottom: 15px;
+}
+
+h1 {
+    color: #21A06B;
+}
+
+.social-media-bar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+    align-items: flex-end;
+    top: 25rem;
+}
+
+.cpu-text {
+    font-weight: bold;
+    text-align: center;
+    z-index: 2000;
+    text-transform: uppercase;
+    padding-top: 1rem;
+}
+
+/* ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+} */
+
+a {
+    color: white;
+}
+
+/* ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+} */
+
+.nav-item nav-link active {
+    border-bottom: #21A06B;
+}
+
+#email {
+    text-align: center;
+    z-index: 2000;
+    color: black;
+    font-weight: 900;
+    opacity: .7;
+    margin: auto;
+}
+
+#greg-photo-container {
+    height: 100rem;
+    width: 100rem;
+    z-index: 5000;
+    margin: auto;
+    background: url("../images/gregphoto.png") no-repeat center;
+    background-size: contain;
+}
+
+.item-1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    background-image: url("../images/port-pic1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+.item-2 {
+    
+    background-image: url("../images/port-pic2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.item-3 {
+    
+    background-image: url("../images/port-pic3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.item-4 {
+   
+    background-image: url("../images/portpic4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.item-5 {
+    
+    background-image: url("../images/port-pic5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.item-6 {
+  
+    background-image: url("../images/port-pic6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.item-7 {
+  
+    background-image: url("../images/port-pic7.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+  .item-8 {
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 1;
+    background-image: url("../images/port-pic8.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .item { 
+      margin: 20px 20px;
+      padding: 25px 25px;  
+  }
+
+btn {
+    color: #21A06B;
+}
+
+p {
+    text-align: center;
+}
+
+.item-9 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .item-10 {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 2;
+  }
+
+  .item-11 {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+  }
+
+  .item-12 {
+    grid-column: 1 / span 1;
+    grid-row: 5 / span 2;
+  }
+
+  .item-13 {
+    grid-column: 1 / span 1;
+    grid-row: 7 / span 1;
+  }
+
+  .item-14 {
+    grid-column: 1 / span 2;
+    grid-row: 8 / span 3;
+    position: relative;
+    left: 40%;
+    justify-content: end;
+    z-index:10000;
+  }
+
+  .item-15 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 8;
+    background-image: url("../images/gregphoto.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #phone-number {
+      position: relative;
+      bottom: 2rem;
+  }
+
+  .item2 {
+      margin-left: 1rem;
+      margin-top: 1.5rem;
+  }
