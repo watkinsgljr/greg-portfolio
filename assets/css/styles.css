@@ -190,18 +190,21 @@ position: fixed;
     position: relative; 
     border-top: 10px solid #21A06B;
     display: grid;
+    padding-left: 6rem;
     /* justify-items: space-around;
     align-items: center; */
     /* flex-flow: column; */
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 10% 10% 10% 10% 5% auto auto;
 }
 
 .language-button-holder {
-    width: 100%;
+    width: 80%;
     position: relative;
     display: flex;
     justify-content: space-around;
+    margin: auto;
+    margin-bottom: 16px;
 }
 
 .language-bar {
@@ -221,8 +224,8 @@ position: fixed;
 }
 
 .language-buttons {
-    height: 65px;
-    width: 65px;
+    height: 50px;
+    width: 50px;
 }
 
 .greeting {
@@ -294,10 +297,14 @@ h1 {
 
 .cpu-text {
     font-weight: bold;
-    text-align: center;
     z-index: 2000;
     text-transform: uppercase;
     padding-top: 1rem;
+    opacity: .7;
+}
+
+.full-stack-text {
+    opacity: .7;
 }
 
 /* ul {
@@ -417,17 +424,19 @@ p {
 
   .item-10 {
     grid-column: 1 / span 1;
-    grid-row: 2 / span 2;
+    grid-row: 2 / span 1;
   }
 
   .item-11 {
     grid-column: 1 / span 1;
-    grid-row: 4 / span 1;
+    grid-row: 3 / span 1;
   }
 
   .item-12 {
     grid-column: 1 / span 1;
-    grid-row: 5 / span 2;
+    grid-row: 4 / span 1;
+    line-height: 1.2rem;
+    font-size: .8rem;
   }
 
   .item-13 {
@@ -449,7 +458,10 @@ p {
     background-image: url("../images/gregphoto.png");
     background-size: contain;
     background-repeat: no-repeat;
-    /* background-position: center; */
+    background-position: center;
+    /* left: 2rem; */
+    position: relative;
+    bottom: 33px;
   }
 
   #phone-number {
