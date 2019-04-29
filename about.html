@@ -12,37 +12,27 @@
     <link href="./assets/css/styles.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Hello, world!</title>
-    
+
 </head>
 
 
 <body>
-<!------------------------COMING SOON------------------------------->
-<!-- Want to align the download resume button to the left and center the other buttons with a max width of the size of the content container.  There will also be a hover feature that will show a green underline. -->
+    <!------------------------COMING SOON------------------------------->
+    <!-- Want to align the download resume button to the left and center the other buttons with a max width of the size of the content container.  There will also be a hover feature that will show a green underline. -->
 
     <div class="fade-block">
         <div class="background-pic"></div>
         <header>
+            <form method="get" action="./assets/images/Resume.pdf">
+                <button class="resume-button nav-resume-button"><i class="fa fa-download"></i> Download
+                    Resume</button>
+            </form>
             <nav class="navigation">
                 <div class="nav-container">
-
-                    <nav class="navbar navbar-expand-lg">
-                        <button class="btn resume-button nav-resume-button"><i class="fa fa-download"></i> Download Resume</button>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                                <a class="nav-item nav-link active" href="./index.html">Home <span
-                                        class="sr-only">(current)</span></a>
-                                <a class="nav-item nav-link" href="./about.html">About</a>
-                                <a class="nav-item nav-link" href="./portfolio.html">Portfolio</a>
-                                <a class="nav-item nav-link" href="./contact.html">Contact</a>
-                            </div>
-                        </div>
-                    </nav>
+                    <a class="nagivation-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nagivation-link" href="./about.html">About</a>
+                    <a class="nagivation-link" href="./portfolio.html">Portfolio</a>
+                    <a class="nagivation-link" href="./contact.html">Contact</a>
                 </div>
             </nav>
         </header>
@@ -50,15 +40,21 @@
         <div class="about-container">
             <div class="about-content-container">
                 <h1>About Me</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia excepturi nihil, dolorum labore magni
-                    veritatis
-                    impedit quae. Mollitia quo ipsa accusantium impedit magni cumque quia ad, alias, vero quam nemo.
+                <p>A highly motivated software developer that produces creative and innovative solutions. Bringing
+                    experience in technologies such as HTML, CSS, JQuery, React, Python and JavaScript.
+                    Leveraging a background in banking, finance, and general business to provide unique perspectives on
+                    how end-users interact with software platforms.
+
                 </p>
                 <div class="about-me-button-container">
                     <button type="button">
+                        <a href="./contact.html"></a>
                         <div class="hire-me-text">Hire me</div>
                     </button>
-                    <button class="btn resume-button"><i class="fa fa-download"></i> Download Resume</button>
+                    <form method="get" action="./assets/images/Resume.pdf">
+                        <button class="resume-button btn"><i class="fa fa-download"></i> Download
+                            Resume</button>
+                    </form>
                 </div>
             </div>
 
@@ -84,6 +80,7 @@
 
 
     <!-- Optional JavaScript -->
+    <script src="./assets/javascript/portfolio.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

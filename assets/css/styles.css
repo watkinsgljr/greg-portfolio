@@ -4,6 +4,18 @@ overflow: scroll;
 
 header {}
 
+.navigation-link {
+    display: inline-block;
+}
+
+.navigation-link:hover {
+    border-bottom: 3px solid #21A06B;
+    font-size: 3rem;
+}
+
+a:active {
+    border-bottom: solid 1px #21A06B;
+}
 
 
 .navigation {
@@ -23,27 +35,10 @@ header {}
 
   }
 
-#navbar2 {
-    max-width: 1000px;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    color: white;
-    position: relative;
-    
-    z-index: 1000;
-}
 
 .nav-items {
     color: white;
 }
-
-/* .navbar-expand-lg {
-    display: flex;
-    max-width: 75%;
-    justify-content: space-around;
-
-} */
 
 .navlinkage {
     display: inline-block;
@@ -51,14 +46,15 @@ header {}
 
 .fade-block {
 background-color: black;
-height: 100vh;
+height: 100%;
 width: 100vw;
 position: fixed;
+overflow: scroll;
 }
 
 .fade-block-green {
     background-color: #21A06B;
-    height: 30vh;
+    
     width: 100vw;
     position: absolute;
     opacity: .85;
@@ -68,7 +64,7 @@ position: fixed;
     background: url("../images/port-background.jpg") no-repeat center;
     background-size: cover;
     opacity: .7;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     position: fixed;
       
@@ -83,13 +79,11 @@ position: fixed;
     display: flex;
     flex-flow: column;
     justify-content: center;
-    top: 10rem;
-    /* border: red solid 1px; */
-      
+    top: 10rem;     
 }
 
 .nav-container {
-    max-width: 95%;
+    width: 50%;
     margin: auto;
     position: relative;
     display: flex;
@@ -101,22 +95,18 @@ position: fixed;
     background-color: white;
     width: 75%;
     margin: 80px auto;
-    /* border: solid red 1px; */
-    /* z-index: 1000; */
     height: 80%;
     position: relative; 
     border-top: 10px solid #21A06B;
     display: flex;
-    /* justify-content: flex-end; */
     align-items: space-around;
     overflow: scroll;
 }
 
 .about-content-container{
-    width: 50rem;
+    width: 80%;
     position: relative;
-    height: 50rem;
-    
+    height: 80%;
     margin: auto;
 }
 
@@ -127,15 +117,13 @@ position: fixed;
     justify-content: space-around;
     margin: auto;
     position: relative;
-    top: 250px;
+    margin-top: 4rem;
 }
 
 .contact-container {
     background-color: white;
     width: 75%;
-    margin: 80px auto;
-    /* border: solid red 1px; */
-    /* z-index: 1000; */
+    margin: 40px auto;
     height: 80%;
     position: relative; 
     border-top: 10px solid #21A06B;
@@ -149,53 +137,106 @@ position: fixed;
 .about-container {
     background-color: white;
     width: 75%;
-    margin: 80px auto;
-    /* border: solid red 1px; */
-    /* z-index: 1000; */
-    height: 80%;
+    margin: 8rem auto;
+    height: 50%;
     position: relative; 
     border-top: 10px solid #21A06B;
     display: flex;
-    /* justify-content: space-between;
-    align-items: center; */
-    overflow: scroll;
-    flex-flow: column;
 }
 
 .port-container {
     background-color: white;
+    /* height: 100vh; */
+    width: 100%;
+    display: grid;
+    flex-flow: column;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+}
+
+.container-for-port {
+    background-color: white;
     width: 75%;
-    margin: 80px auto;
-    /* border: solid red 1px; */
-    /* z-index: 1000; */
-    height: 80%;
     position: relative; 
     border-top: 10px solid #21A06B;
-    display: grid;
-    /* justify-items: space-around;
-    align-items: center; */
-    flex-flow: column;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+
+h2 {
+    text-align: center;
+    color: #21A06B;
+   
+    font-weight: bold !important;
+    display: inline;
+    border-bottom: 5px solid grey;
+    margin-bottom: 1rem !important;
+}
+
+.port-heading {
+    width: 50%;
+    text-align: center;
+}
+
+.back {
+    overflow-y: auto;
+    padding: 1rem;
+    font-size: .65rem;
 }
 
 .index-grid-container {
     background-color: white;
-    width: 75%;
+    width: 90%;
     margin: auto;
-    margin-top: 80px;
-    /* border: solid red 1px; */
-    /* z-index: 1000; */
+    height: 100%;
+    position: relative; 
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 75% auto;
+    margin-top: 1px;
+}
+
+.main-index-container {
+    background-color: white;
+    width: 65%;
+    margin: 40px auto;
     height: 80%;
     position: relative; 
     border-top: 10px solid #21A06B;
+}
+
+.app-grid-container {
     display: grid;
-    padding-left: 6rem;
-    /* justify-items: space-around;
-    align-items: center; */
-    /* flex-flow: column; */
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 10% 10% 10% 10% 5% auto auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    /* grid-auto-rows: 20rem; */
+    background-color: white;
+    position: relative;
+    height: 100%;
+    width: 85%;
+    margin: auto;
+    overflow: scroll;
+    margin-top: 1rem;
+    border-top: 10px solid #21A06B;
+    padding: 2rem;
+    
+
+}
+
+/* .main-app-container {
+    background-color: white;
+    height: 100vh;
+} */
+
+.item3 {
+    /* border: solid red 1px; */
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
 }
 
 .language-button-holder {
@@ -210,17 +251,14 @@ position: fixed;
 .language-bar {
     position: relative;
     display: flex;
-    /* border: 1px red solid; */
     height: 100px;
-    width: 44rem;
-    right: 2rem;
+    width: 100%;
     border-radius: 15px;
     box-shadow: 10px 10px 2px 1px rgba(0, 0, 0, .2);
     flex-flow: row;
     justify-content: space-around;
     align-items: flex-end;
     padding: 0 10px;
-    float: right;
 }
 
 .language-buttons {
@@ -235,7 +273,6 @@ position: fixed;
     justify-content: flex-start;
     align-items: flex-start;
     Width: 35%;
-    /* border: red solid 1px; */
     margin-left: 50px;
     right: 350px;
     color: grey;
@@ -259,7 +296,6 @@ button {
     border: 3px solid #21A06B;
     background-color: white;
     border-radius: 15px;
-    /* color: #21A06B; */
     text-transform: uppercase;
     font-weight: bold;
     opacity: .5;  
@@ -270,29 +306,38 @@ button {
     opacity: 1;
     color: white;
     text-transform: uppercase;
-    font-size: 1rem;
-    width: 200px;
+    font-size: .75rem;
+    width: 160px;
+    margin-top: 0;
     
 }
 
 .nav-resume-button {
-   height: 85%;
+   height: 1.5rem;
    float: left;
    text-align: center;
-   padding-bottom: 15px;
+   position: absolute;
+   margin: 1rem;
+   z-index: 90000000;
 }
 
 h1 {
     color: #21A06B;
 }
 
+
 .social-media-bar {
     position: relative;
     display: flex;
-    justify-content: space-between;
-    width: 20rem;
+    justify-content: space-around;
+    width: 7rem;
     align-items: flex-end;
     top: 25rem;
+}
+
+.social-media-button {
+    height: 30px;
+    width: 30px;
 }
 
 .cpu-text {
@@ -303,8 +348,30 @@ h1 {
     opacity: .7;
 }
 
+.contact-me-cpu-text {
+    font-weight: bold;
+    z-index: 2000;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    opacity: .7;
+    margin: auto;
+    font-size: 2rem;
+}
+
 .full-stack-text {
     opacity: .7;
+}
+
+.video {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+}
+
+.modal {
+    padding: 2rem;
+    padding: 2rem !important;
+    overflow: visible;
+    height: auto;
 }
 
 /* ul {
@@ -316,12 +383,6 @@ h1 {
 a {
     color: white;
 }
-
-/* ul {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-} */
 
 .nav-item nav-link active {
     border-bottom: #21A06B;
@@ -346,44 +407,50 @@ a {
 }
 
 .item-1 {
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 2;
-    background-image: url("../images/port-pic1.jpg");
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    /* background-image: url("../images/eventhub.PNG"); */
     background-size: cover;
     background-repeat: no-repeat;
   }
 
 .item-2 {
-    
-    background-image: url("../images/hangmanscreenshot.PNG");
+    /* background-image: url("../images/hangmanscreenshot.PNG"); */
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .item-3 {
-    
-    background-image: url("../images/port-pic3.jpg");
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1; 
+    /* background-image: url("../images/port-pic3.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .item-4 {
-   
-    background-image: url("../images/portpic4.jpg");
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    /* background-image: url("../images/portpic4.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .item-5 {
-    
-    background-image: url("../images/port-pic5.jpg");
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1; 
+    /* background-image: url("../images/port-pic5.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .item-6 {
-  
-    background-image: url("../images/port-pic6.jpg");
+
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1; 
+    /* background-image: url("../images/port-pic6.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -420,33 +487,18 @@ p {
 .item-9 {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
-  }
-
-  .item-10 {
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
-  }
-
-  .item-11 {
-    grid-column: 1 / span 1;
-    grid-row: 3 / span 1;
-  }
-
-  .item-12 {
-    grid-column: 1 / span 1;
-    grid-row: 4 / span 1;
-    line-height: 1.2rem;
-    font-size: .8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .item-13 {
-    grid-column: 1 / span 1;
-    grid-row: 7 / span 1;
+      margin-top: 1rem;
   }
 
   .item-14 {
     grid-column: 1 / span 2;
-    grid-row: 8 / span 3;
+    grid-row: 2 / span 1;
     position: relative;
     justify-content: end;
     z-index:10000;
@@ -454,14 +506,13 @@ p {
 
   .item-15 {
     grid-column: 2 / span 1;
-    grid-row: 1 / span 8;
+    grid-row: 1 / span 1;
     background-image: url("../images/gregphoto.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     /* left: 2rem; */
     position: relative;
-    bottom: 33px;
   }
 
   #phone-number {
@@ -470,6 +521,10 @@ p {
   }
 
   .item2 {
-      margin-left: 1rem;
-      margin-top: 1.5rem;
+      /* margin-left: 1rem;
+      margin-top: 1.5rem; */
+  }
+  .card {
+      width: 100% !important;
+      height: 100% !important;
   }

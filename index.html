@@ -10,67 +10,70 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="./assets/css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Hello, world!</title>
 </head>
 
 
 <body>
 
-<!------------------------COMING SOON------------------------------->
-<!-- Want to align the download resume button to the left and center the other buttons with a max width of the size of the content container.  There will also be a hover feature that will show a green underline. -->
-<!-------Will clean up language bar and take away excess spacing issues as well as make responsive-->
+    <!------------------------COMING SOON------------------------------->
+    <!-- Want to align the download resume button to the left and center the other buttons with a max width of the size of the content container.  There will also be a hover feature that will show a green underline. -->
+    <!-------Will clean up language bar and take away excess spacing issues as well as make responsive-->
     <div class="fade-block">
         <div class="background-pic"></div>
         <header>
+                <form method="get" action="./assets/images/Resume.pdf">
+                        <button class="resume-button nav-resume-button"><i class="fa fa-download"></i> Download
+                            Resume</button>
+                     </form>
+
             <nav class="navigation">
                 <div class="nav-container">
-
-                    <nav class="navbar navbar-expand-lg">
-                        <button class="btn resume-button nav-resume-button"><i class="fa fa-download"></i> Download Resume</button>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                                <a class="nav-item nav-link active" href="./index.html">Home <span
-                                        class="sr-only">(current)</span></a>
-                                <a class="nav-item nav-link" href="./about.html">About</a>
-                                <a class="nav-item nav-link" href="./portfolio.html">Portfolio</a>
-                                <a class="nav-item nav-link" href="./contact.html">Contact</a>
-                            </div>
-                        </div>
-                    </nav>
+                    <a class="nagivation-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nagivation-link" href="./about.html">About</a>
+                    <a class="nagivation-link" href="./portfolio.html">Portfolio</a>
+                    <a class="nagivation-link" href="./contact.html">Contact</a>
                 </div>
             </nav>
         </header>
-        <div class="index-grid-container">
-            <div class="item2 item-9 cpu-text">Hello</div>
-            <div class="item2 item-10"><h1>I'm Greg</h1></div>
-            <div class="item2 item-11"><h4 class="full-stack-text">Full Stack Developer</h4></div>
-            <div class="item2 item-12 full-stack-text">
-                Life is too short for crap software!  Hire me now before life passes you by and your technology is not up to par.
-            </div>
-            <div class="item2 item-13"><button type="button">Hire me</button></div>
-            <div class="item2 item-14">
-                
+        <div class="main-index-container">
+            <div class="index-grid-container">
+                <div class="item2 item-9">
+                    <div class="cpu-text">Hello</div>
+                    <div>
+                        <h1>I'm Greg</h1>
+                    </div>
+                    <div>
+                        <h4 class="full-stack-text">Full Stack Developer</h4>
+                    </div>
+                    <div>
+                        Life is too short for crap software! 
+                    </div>
+                    <div class="item2 item-13"><button type="button">Hire me</button></div>
+                </div>
+
+                <div class="item2 item-14">
+
                     <div class="language-bar">
                         <div class="language-button-holder">
                             <img class="language-buttons" id="html" src="./assets/images/Oval.png" alt="HTML">
                             <img class="language-buttons" id="css" src="./assets/images/Oval Copy.png" alt="CSS">
                             <img class="language-buttons" id="js" src="./assets/images/Oval Copy 2.png" alt="JS">
                             <img class="language-buttons" id="php" src="./assets/images/Oval Copy 3.png" alt="PHP">
-                            <img class="language-buttons" id="python" src="./assets/images/Oval Copy 4.png" alt="Python">
+                            <img class="language-buttons" id="python" src="./assets/images/Oval Copy 4.png"
+                                alt="Python">
                             <img class="language-buttons" id="csharp" src="./assets/images/Oval Copy 5.png" alt="C#">
                             <img class="language-buttons" id="mysql" src="./assets/images/Oval Copy 7.png" alt="MySQL">
                         </div>
                     </div>
-                
+
+                </div>
+
+                <div class="item2 item-15"></div>
+
             </div>
-
-            <div class="item2 item-15"></div>
-
         </div>
     </div>
 

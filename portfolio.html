@@ -5,61 +5,470 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="./assets/css/styles.css" rel="stylesheet" type="text/css">
+
+
+
     <title>Hello, world!</title>
 </head>
 
 
 <body>
 
-<!------------------------COMING SOON------------------------------->
-<!-- Want to align the download resume button to the left and center the other buttons with a max width of the size of the content container.  There will also be a hover feature that will show a green underline. -->
-
+    <!------------------------COMING SOON------------------------------->
+    <!-- Want to align the download resume button to the left and center the other buttons with a max width of the size of the content container.  There will also be a hover feature that will show a green underline. -->
+    <!-------Will clean up language bar and take away excess spacing issues as well as make responsive-->
     <div class="fade-block">
         <div class="background-pic"></div>
         <header>
+            <form method="get" action="./assets/images/updatedResume (5).pdf">
+                <button class="resume-button nav-resume-button"><i class="fa fa-download"></i> Download
+                    Resume</button>
+            </form>
+
             <nav class="navigation">
                 <div class="nav-container">
-
-                    <nav class="navbar navbar-expand-lg">
-                            <button class="btn resume-button nav-resume-button"><i class="fa fa-download"></i> Download Resume</button>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                                <a class="nav-item nav-link active" href="./index.html">Home <span
-                                        class="sr-only">(current)</span></a>
-                                <a class="nav-item nav-link" href="./about.html">About</a>
-                                <a class="nav-item nav-link" href="./portfolio.html">Portfolio</a>
-                                <a class="nav-item nav-link" href="./contact.html">Contact</a>
-                            </div>
-                        </div>
-                    </nav>
+                    <a class="nagivation-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nagivation-link" href="./about.html">About</a>
+                    <a class="nagivation-link" href="./portfolio.html">Portfolio</a>
+                    <a class="nagivation-link" href="./contact.html">Contact</a>
                 </div>
             </nav>
         </header>
 
-        <div class="port-container">
-            <div class="item item-1"></div>
-            <div class="item item-2"><a href="https://watkinsgljr.github.io/litty-game/">Take a look</a></div>
-            <div class="item item-3">Test 3</div>
-            <div class="item item-4">Test 4</div>
-            <div class="item item-5">Test 5</div>
-            <div class="item item-6">Test 6</div>
-            <div class="item item-7">Test 7</div>
-            <div class="item item-8">Test 8</div>
+        <div class="container-for-port">
 
 
 
+
+            <div class="port-heading">
+                <h2>Latest Work</h2>
+            </div>
+
+            <div class="port-container">
+
+                <div class="item item-1">
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="front">
+                            <!-- Card image -->
+
+                            <div class="embed-responsive embed-responsive-21by9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/vI3UPpqYZUA"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="mask rgba-white-slight"></div>
+                            </a>
+
+
+                            <!-- Card content -->
+                            <div class="card-body">
+
+                                <!-- Title -->
+                                <h4 class="card-title">Event Hub (Group Project)</h4>
+                                <!-- Text -->
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                    the card's content.</p>
+                                <!-- Button -->
+                                <a href="#modal-1" rel="modal:open" class="btn btn-primary">See Details</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Card -->
+
+                    <!-- Modal HTML embedded directly into document -->
+                    <div id="modal-1" class="modal">
+                        <p>
+                            <h5>EventHub</h5>
+                            Details coming soon.
+                        </p>
+                        <a href="#" rel="modal:close">Close</a>
+                    </div>
+
+                </div>
+
+
+
+                <div class="item item-2">
+
+                    <!-- Card -->
+                    <div class="card">
+
+                        <!-- Card image -->
+
+                        <div class="embed-responsive embed-responsive-21by9">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xaCYdiI_HWM"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="mask rgba-white-slight"></div>
+                        </a>
+
+
+                        <!-- Card content -->
+                        <div class="card-body">
+
+                            <!-- Title -->
+                            <h4 class="card-title">Employee Data Management System</h4>
+                            <!-- Text -->
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <!-- Button -->
+                            <a href="#modal-2" rel="modal:open" class="btn btn-primary">See Details</a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Modal HTML embedded directly into document -->
+                    <div id="modal-2" class="modal">
+                        <p>
+                            <h5>Employee Data Management System:</h5>
+                            I got a chance to build an Employee Data Management application that collects user input and
+                            stores the information into its database. The app then fetches the data, manipulates it, and
+                            imports it into the jQuery data table.
+                            <br>
+                            <br>
+                            This was a fun project because I challenged myself to
+                            finish it in one day. I didn't get as far as I would have liked but it was a great learning
+                            experience, particularly with data tables. I got stuck when I realized that users would not
+                            have sorting capabilities with the original table's data due to it being only an HTML markup
+                            instead of an actual data storage medium where users could interact with the information.
+                            <br>
+                            <br>
+                            <h6>Spotlight experience:</h6>
+                            Table vs data table.
+                            jQuery data table
+                            Firebase.
+                            <br>
+                            <br>
+
+                            <h6>Other experience/tech used:</h6>
+                            HTML,
+                            CSS,
+                            Javascript,
+                            accounting.js library,
+                            moment.js library,
+                            and Bootstrap Datepicker.
+                            <br>
+                            <br>
+
+                            <h6>Future development:</h6>
+                            Design,
+                            allow users to edit and remove employees from app,
+                            add modals that notify user when new data has been submitted successfully,
+                            and sort icon so that user knows the columns can be sorted.
+                            <br>
+                            <br>
+                        </p>
+                        <a href="#" rel="modal:close">Close</a>
+                    </div>
+                </div>
+
+
+
+                <div class="item item-3">
+                    <!-- Card -->
+                    <div class="card">
+
+                        <!-- Card image -->
+
+                        <div class="embed-responsive embed-responsive-21by9">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/w2-ukyL3g8w"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="mask rgba-white-slight"></div>
+                        </a>
+
+
+                        <!-- Card content -->
+                        <div class="card-body">
+
+                            <!-- Title -->
+                            <h4 class="card-title">MGM Grand Legend</h4>
+                            <!-- Text -->
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <!-- Button -->
+                            <a href="#modal-3" rel="modal:open" class="btn btn-primary">See Details</a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Modal HTML embedded directly into document -->
+                    <div id="modal-3" class="modal">
+                        <p>
+                            <h5>MGM Grand Street:</h5>
+                            This boxing game allows user to select one of four boxers in which they will battle for the
+                            championship. Each boxer has a different punch power, counter punch power, and beginning
+                            health
+                            points to start the game so users must select the order they fight each opponent carefully.
+                            <br>
+                            <br>
+                            On each punch (click of attack button):
+                            User's boxer's punch power increases by the amount of starting punch power.
+                            Opponent counter punches user.
+                            User health points decrease by opponent's counter punch power.
+                            Opponent health points decrease by user punch power.
+                            Heath bar resized to reflect percentage of health remaining for each user.
+                            <br>
+                            <br>
+
+                            <h6>Spotlight experience:</h6>
+                            Great practice with algorithms.
+                            <br>
+                            <br>
+
+                            <h6>Other experience/tech used:</h6>
+                            JavaScript, jQuery, HTML, CSS.
+                            <br>
+                            <br>
+
+                            <h6>Future development:</h6>
+                            Add flip feature to boxing cards so that boxer information is on the back of the card and is
+                            displayed on hover.
+                            <br>
+                            <br>
+                        </p>
+                        <a href="#" rel="modal:close">Close</a>
+                    </div>
+                </div>
+
+
+
+                <div class="item item-4">
+                    <!-- Card -->
+                    <div class="card">
+
+                        <!-- Card image -->
+
+                        <div class="embed-responsive embed-responsive-21by9">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/J1Rtq9xpJZU"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="mask rgba-white-slight"></div>
+                        </a>
+
+
+                        <!-- Card content -->
+                        <div class="card-body">
+
+                            <!-- Title -->
+                            <h4 class="card-title">Hangman: Mamba Edition</h4>
+                            <!-- Text -->
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <!-- Button -->
+                            <a href="#modal-4" rel="modal:open" class="btn btn-primary">See Datails</a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Modal HTML embedded directly into document -->
+                    <div id="modal-4" class="modal">
+                        <p>
+                            <h5>Hangman: Mamba Edition</h5>
+                            I was able to build this simple hangman game with HTML, CSS and vanilla JavaScript in honor
+                            of the best basketball player of all time! Users presses a key to guess letters to randomly
+                            selected word. Users may only guess letters.
+
+                            <br>
+                            <br>
+
+                            <h6>Spotlight experience:</h6>
+                            I was able to get good practice manipulating arrays with JavaScript's
+                            array methods. Regex validation, Math.floor and Math.random methods were also notable
+                            practice points.
+                            <br>
+                            <br>
+
+                            <h6>Other experience/tech used:</h6>
+                            JavaScript, jQuery, HTML, CSS.
+                            <br>
+                            <br>
+
+                            <h6>Future development:</h6>
+                            I would like to ditch the alerts and replace them with modals so my scripts aren't being
+                            disrupted whenever the app needs to communicate to its user.
+                            <br>
+                            <br>
+                        </p>
+                        <a href="#" rel="modal:close">Close</a>
+                    </div>
+                </div>
+
+
+
+                <div class="item item-5">
+                    <!-- Card -->
+                    <div class="card">
+
+                        <!-- Card image -->
+
+                        <div class="embed-responsive embed-responsive-21by9">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AenL6yIjVrI"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="mask rgba-white-slight"></div>
+                        </a>
+
+
+                        <!-- Card content -->
+                        <div class="card-body">
+
+                            <!-- Title -->
+                            <h4 class="card-title">Brain Fart Quiz</h4>
+                            <!-- Text -->
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <!-- Button -->
+                            <a href="#modal-5" rel="modal:open" class="btn btn-primary">See Details</a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Modal HTML embedded directly into document -->
+                    <div id="modal-5" class="modal">
+                        <p>
+                            <h5>Brain Fart Quiz</h5>
+                            I built this trivia game with HTML, CSS, JavaScript, and jQuery.
+
+                            Users have 30 seconds to answer the question displayed on the screen. User clicks on answer
+                            choice to make selection and immediately receives feedback.
+                            <br>
+                            <br>
+
+                            <h6>Spotlight experience:</h6>
+                            Used constructor functions to generate new question objects, Used setInterval and
+                            clearInterval methods to give users a time limit to answer questions.
+                            <br>
+                            <br>
+
+                            <h6>Other experience/tech used:</h6>
+                            JavaScript, jQuery, HTML, CSS.
+                            <br>
+                            <br>
+
+                            <h6>Future development:</h6>
+                            Randomize order of questions and answers before the start of each retake.
+                            <br>
+                            <br>
+                        </p>
+                        <a href="#" rel="modal:close">Close</a>
+                    </div>
+                </div>
+
+
+
+                <div class="item item-6">
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="front">
+                            <!-- Card image -->
+
+                            <div class="embed-responsive embed-responsive-21by9">
+                                <iframe class="video" width="100%" height="100%"
+                                    src="https://www.youtube.com/embed/WpSrxhjHV4A" frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="mask rgba-white-slight"></div>
+                            </a>
+
+
+                            <!-- Card content -->
+                            <div class="card-body">
+
+                                <!-- Title -->
+                                <h4 class="card-title">GiphEmotions</h4>
+                                <!-- Text -->
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                    the card's content.</p>
+                                <!-- Button -->
+                                <a href="#modal-6" rel="modal:open" class="btn btn-primary">See Details</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Card -->
+
+                    <!-- Modal HTML embedded directly into document -->
+                    <div id="modal-6" class="modal">
+                        <p>
+                            <h5>GiphEmotions Giphy Generator:</h5>
+                            This Giphy Generator uses Giphy API to specialize in emotion gif generation. Click on an
+                            emotion button and 8 gifs populate that correspond with the button clicked. Don’t worry if
+                            you don’t see a button that reflects your current mood. Just input how you feel in the add
+                            emotion field and a new button will appear just for you. Click the new button to see the
+                            gifs you are looking for.
+                            <br>
+                            <br>
+
+                            <h6>Spotlight experience:</h6>
+                            Was able to get practice utilizing ajax calls
+                            <br>
+                            <br>
+
+                            <h6>Other experience/tech used:</h6>
+                            JavaScript, jQuery, HTML, CSS, practiced creating click events for buttons generated
+                            dynamically,
+                            learned how to set default state of gif while adding click events to toggle between the
+                            still and animate state.
+                            <br>
+                            <br>
+
+                            <h6>Future development:</h6>
+                            Would like to add input conditions using regEx.
+                            <br>
+                            <br>
+                        </p>
+                        <a href="#" rel="modal:close">Close</a>
+                        <a href="https://github.com/watkinsgljr" class="btn btn-primary">GitHub</a>
+                        <a href="https://github.com/watkinsgljr" class="btn btn-primary">Visit Site</a>
+                        <a href="https://github.com/watkinsgljr" class="btn btn-primary">GitHub</a>
+                    </div>
+
+                </div>
+
+
+
+
+
+            </div>
 
         </div>
+
     </div>
 
 
@@ -71,19 +480,26 @@
 
 
 
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/js/mdb.min.js"></script>
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+    <script type="text/javascript" src="./assets/javascript/portfolio.js"></script>
+
+
 </body>
 
 </html>
